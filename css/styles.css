@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #1b1c1e;
+    color: #fffefd;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header center img{
+    text-align: center;
+    height: 64px;
+}
+
+.headerNav{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+}
+
+nav ul li img{
+    height: 32px;
+}
+
+h6{
+    color: #1b1c1e;
+    background-color: #cc9250;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapText{
+    text-align: center;
+    color: #fffefd;
+    width: 50%;
+}
+
+.wraptit{
+    font-size: 4rem;
+}
+
+.wrapsub{
+    font-size: 2rem;
+}
+
+.prod{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.pubs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tituloPub{
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+}
+
+.precioPub{
+    font-size: medium;
+    font-style: normal;
+    text-align: center;
+    color: #cc9250;
+}
+
+.footer{
+    font-size: 2rem;
+    background-color:#cc9250;
+}
+
+.ig{
+    color: #1b1c1e;
+    background-color: #cc9250;
+    text-align: center;
+}
+
+.footericons{
+    background-color: #cc9250;
+    text-align: end;
+}
+
+.copy{
+    background-color: #cc9250;
+}
+
+.wrapAbout{
+    padding-left: 20rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: url(../assets/images/bkaboutus.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapAboutText{
+    color: #fffefd;
+    text-align: start;
+    width: 35%;
+}
+
+.wrapAboutTit{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.wrapAboutSub{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.wrapContact{
+    padding-left: 20rem;
+    width: 99vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapContactText{
+    color: #fffefd;
+    text-align: start;
+    width: 65%;
+}
+
+.aboutForm{
+    font-size: 5rem;
+}
+
+.logInForm{
+    font-size: 5rem;
+}
+
+.cart{
+    padding-left: 20rem;
+    width: 99vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cartText{
+    color: #fffefd;
+    text-align: start;
+    width: 100%;
+}
+
+.cartTitle{
+    font-size: 5rem;
+    font-weight: 900;
+} 
+
+.cartSub{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.pubImg{
+    width: 50vw;
+}
+
+.pub{
+    display: flex;
+}
+
+.artName{
+    font-size: 5rem;
+}
+
+.artPrice{
+    color: #cc9250;
+    font-size: 4rem;
+}
