@@ -10,19 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/images/kamui.png" />
 </head>
 <body>
     <header class="header">
-        <center>
-            <a href="../index.html"><img src="../assets/images/kamuiinv.png" alt="logokamui"></a>
-        </center>
-        <nav>
+        <nav class="d-flex navbar bottomFixed">   
+            <div class="searchForm ">
+            <div class="p-1 bg-dark rounded rounded-pill shadow-sm mb-4 outlineSearch">
+                <div class="input-group">
+                    <input type="search" placeholder="Buscar" aria-describedby="button-addon1" class="form-control border-0 bg-transparent rounded rounded-pill">
+                    <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-search"></i><img class="invertImg" src="../assets/images/loupe.png" alt="loupe" height="16px" style="opacity: 50%;" ></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+              <a class="navbar-brand center" href="../index.html">
+                <img id="logo" src="../assets/images/kamuiinv.png" alt="logoKamui" width="64px">
+              </a>
+            </div>
             <ul>
-              <li class="headerNav">
-                <a href="../pages/nosotros.html"><img src="../assets/images/group.png" alt="nosotros"></a>
-                <a href="../pages/contacto.html"><img src="../assets/images/telefono.png" alt="contacto"></a>
-                <a href="../pages/carro.html"><img src="../assets/images/carro.png" alt="carro"></a>
-                <a href="../pages/logIn.html"><img src="../assets/images/perfil.png" alt="logIn"></a>
+              <li class="d-flex headerNav" id="mobileNav">
+                <a id="nosotros" href="../pages/nosotros.html"><img src="../assets/images/group.png" alt="nosotros"></a>
+                <a id="contacto" href="../pages/contacto.html"><img src="../assets/images/telefono.png" alt="contacto"></a>
+                <a id="carro" href="../pages/carro.html"><img src="../assets/images/carro.png" alt="carro"></a>
+                <a id="logIn" href="../pages/logIn.html"><img src="../assets/images/perfil.png" alt="logIn"></a>
+                <a id="mobileLogo" href="../index.html"><img src="../assets/images/kamui.png" style="width: 48px; height: 48px;" alt="mobileLogo"></a>
               </li>
             </ul>
         </nav>
@@ -77,13 +91,32 @@
     </main>
     <footer class="footer">
         <div class="ig">
-            <a target="_blank" href="https://www.instagram.com/kamui.ind/"><img src="../assets/images/ig.png" alt="iglogo" width="24px">Kamui ind</a>
+            <a target="_blank" href="https://www.instagram.com/kamui.ind/"><img src="../assets/images/ig.png" alt="iglogo" width="30px"></a>
+            <a target="_blank" href="https://www.instagram.com/kamui.ind/"><h5>@kamui.ind</h5></a>
+        </div>
+        <div id="followUs">
+            <a target="_blank" href="https://www.instagram.com/kamui.ind/"><button type="button" class="btn btn-outline-dark rounded rounded-pill">SEGUINOS</button></a>
         </div>
         <div class="footericons">
-            <a target="_blank" href=""><img src="../assets/images/marcador-de-posicion.png" alt="gmap" width="16px"></a>
-            <a target="_blank" href=""><img src="../assets/images/whatsapp.png" alt="wsp" width="16px"></a>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../assets/images/marcador-de-posicion.png" alt="gmap" width="25px"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mapa</h5>
+                  </div>
+                  <div class="modal-body">
+                    <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26368.278639039552!2d-60.26038187971609!3d-34.29865649533977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9129118564ced%3A0x2b6e4b879da2223c!2sSalto%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669031292814!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a target="_blank" href=""><img src="../assets/images/whatsapp.png" alt="wsp" width="25px"></a>
         </div>
-        <div class="copy">
+        <div class="d-flex justify-content-between">
             <h6>Kamui ind 2022</h6>
             <h6>© Todos los derechos reservados</h6>
         </div>
