@@ -9,6 +9,11 @@
     list-style-type: none;
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 @media (min-width: 768px) {
     .mobileSearch{
         display: none;
@@ -43,6 +48,7 @@ body{
 
 .mainBody{
     background: url(../assets/images/background.png);
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #1b1c1e;
@@ -118,6 +124,50 @@ h6{
     background: transparent;
 }
 
+.btnUnirse{
+    letter-spacing: 3px;
+}
+
+.cartBtn{
+    letter-spacing: 7px;
+    height: 35px;
+    width: 300px;
+    background-color: #cc9250;
+    color: #1b1c1e;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.cartBtn:hover{
+    color: #1b1c1e;
+    background: gray;
+    cursor: default;
+}
+
+.cartText{
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
+    color: #1b1c1e !important;
+    padding: 0 !important;
+}
+
+.roundedBtn{
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cartStock button:hover span {
+    display: none
+  }
+  
+.cartStock button:hover:before {
+    content: "SIN STOCK"
+  }
+
 .btnUnirse:hover{
     color: #fffefd;
     background: rgba(0, 0, 0, 0.5);
@@ -144,6 +194,13 @@ h6{
     align-items: flex-start;
     font-size: 2rem;
     padding-left: 10rem;
+}
+
+.pubInfo span{
+    color: #cc9250;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 1rem;
 }
 
 .borderImg{ 
@@ -210,6 +267,13 @@ h5{
     background-color: #1b1c1e;
 }
 
+.aboutBody{
+    background: url(../assets/images/bkaboutus.png);
+    width: 1920px;
+    height: 1080px;
+    background-color: #1b1c1e;
+}
+
 .wrapAboutText{
     color: #fffefd;
     text-align: start;
@@ -224,6 +288,12 @@ h5{
 .wrapAboutSub{
     font-size: 2rem;
     font-weight: 600;
+}
+
+.shipForm {
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
 }
 
 .wrapContact{
@@ -275,7 +345,9 @@ h5{
 }
 
 .pubImg{
+    padding-left: 3rem;
     width: 50vw;
+    padding-bottom: 9.4rem;
 }
 
 .pub{
@@ -291,6 +363,10 @@ h5{
     font-size: 4rem;
 }
 
+.artPad{
+    padding-bottom: 4rem;
+}
+
 .pubSelect{
     display: flex;
     justify-content: space-between;
@@ -301,6 +377,11 @@ h5{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+#cCard{
+    width: 3rem;
+    object-fit: contain;
 }
 
 .content-select select{
@@ -314,8 +395,9 @@ h5{
 }
 
 .content-select{
-    max-width: 250px;
+    width: 27rem;
     position: relative;
+    padding-right: 2rem;
 }
 
 .content-select label{
@@ -342,8 +424,9 @@ h5{
     border-radius: 15px;
     position: relative;
     transition: all 0.25s ease;
-    font-size: x-small;
+    font-size: 1.15rem;
     padding-right: 15rem;
+    margin-bottom: 4rem;
 }
 
 .content-select select:hover{
@@ -352,10 +435,17 @@ h5{
     border-color: #1b1c1e;
 }
 
+.optionCart{
+    color: #1b1c1e;
+    font-size: 1.5rem;
+    background-color: #cc9250;
+    font-weight: 600;
+}
+
 .content-select i{
 	position: absolute;
-	right: 20px;
-	top: 65%;
+	right: 40px;
+	top: 37%;
 	width: 5px;
 	height: 5px;
 	display: block;
@@ -377,6 +467,12 @@ h5{
 }
 
 @media (max-width: 767px){
+
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
     .bottomFixed{
         background:transparent;
         overflow: hidden;
@@ -478,12 +574,11 @@ h5{
     }
 
     .mainBody{
-        background: url(../assets/images/background.png);
-        background-size: cover;
+        background: url(../assets/images/backgroundmob.png);
+        height: 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-color: #1b1c1e;
-        background-position: center;
-        height: 100vh;
     }
 
     .wrap{
@@ -526,5 +621,95 @@ h5{
     .gmap{
         width: 380px;
         height: 403.703px;
+    }
+
+    .pub{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pubInfo{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: start;
+    }
+
+    .pubImg{
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100vw;
+    }
+    
+    .artName{
+        font-size: 3rem;
+        text-align: left;
+    }
+    
+    .artPrice{
+        color: #cc9250;
+        font-size: 2.5rem;
+    }
+    
+    .artPad{
+        padding-bottom: 1rem;
+    }
+
+    .pubSelect{
+        width: 100%;
+    }
+
+    .content-select{
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .content-select label{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    
+    .content-select select{
+        padding-right: 0rem;
+    }
+    
+    .optionCart{
+        color: #1b1c1e;
+        font-size: 1.5rem;
+        background-color: #cc9250;
+        font-weight: 600;
+    }
+    
+    .content-select i{
+        position: absolute;
+        right: 2.5rem;
+        top: 37%;
+        width: 5px;
+        height: 5px;
+        display: block;
+        border-left:1px solid rgb(255, 255, 255, 0.400);
+        border-bottom:1px solid rgb(255, 255, 255, 0.400);
+        transform: rotate(-45deg);
+        transition: all 0.25s ease;
+    }
+     
+    .content-select:hover i{
+        margin-top: 3px;
+        border-left-color: #1b1c1e;
+        border-bottom-color: #1b1c1e;
+    }
+
+    .cartStock{
+        align-self: center;
+    }
+
+    .btnro{
+        border-radius: 10px;
+        height: 4rem;
+    }
+
+    .cartBtn{
+        margin-top: 0;
     }
 }

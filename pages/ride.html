@@ -44,33 +44,39 @@
     <main>
       <section class="pub">
         <div class="pub">
-          <div>
-            <img class="pubImg" src="../assets/images/remera ride.jpg" alt="serenity">
+          <div class="pubImg">
+            <img src="../assets/images/remera ride.jpg" width="1000" height="1000" style="width: 100%; height: 100%; object-fit: cover;" alt="remeraRide"/>
           </div>
           <div class="pubInfo">
           <div>
             <h1 class="artName">Remera "Enjoy the Ride"</h1>
-            <h2 class="artPrice">$2.650</h2>
-            <h3>3 cuotas sin interés de $883.4</h3>
+            <div class="artPad"><h2 class="artPrice">$2.650</h2></div>
+            <div class="artPad">
+              <div class="d-flex">
+                <img id="cCard" src="../assets/images/tarjeta-de-credito.png" alt="creditcard">
+                <span style="color:#cc9250">3 cuotas sin interés </span>
+                <span style="color:#fffefd"> de $883.4</span>
+              </div>
+            </div>
           </div>
       <div class="pubSelect">
         <div class="content-select">
             <label for="">COLOR</label>
             <select>
-                <option value="1">Blanco</option>
-                <option value="2">Negro</option>
-                <option value="3">Beige</option>
+                <option class="optionCart" value="1">Blanco</option>
+                <option class="optionCart" value="2">Negro</option>
+                <option class="optionCart" value="3">Beige</option>
             </select>
             <i></i>
         </div>
         <div class="content-select">
             <label for="">TALLE</label>
             <select>
-                <option value="1">S</option>
-                <option value="2">M</option>
-                <option value="3">L</option>
-                <option value="4">XL</option>
-                <option value="5">XXL</option>
+                <option class="optionCart" value="1">S</option>
+                <option class="optionCart" value="2">M</option>
+                <option class="optionCart" value="3">L</option>
+                <option class="optionCart" value="4">XL</option>
+                <option class="optionCart" value="5">XXL</option>
             </select>
             <i></i>
         </div>
@@ -78,19 +84,23 @@
       <div class="content-select">
           <label for="">CANTIDAD</label>
           <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+            <option class="optionCart" value="1">1</option>
+            <option class="optionCart" value="2">2</option>
+            <option class="optionCart" value="3">3</option>
           </select>
           <i></i>
       </div>
-        <div>
-            <button>AGREGAR AL CARRITO</button>
+        <div class="cartStock">
+          <button type="button" class="btn btnro cartBtn"><span class="cartText">AGREGAR AL CARRITO</span></button>
         </div>
-        <div>
-            <label for="">MEDIOS DE ENVIO</label>
-            <input type="text" placeholder="Tu código postal" required>
-            <button>CALCULAR</button>
+        <div class="content-select">
+          <label for="">MEDIOS DE ENVIO</label>
+          <div class="rounded rounded-pill mb-4 outlineSearch">
+          <div class="input-group">
+            <input type="text" class="form-control form-control border-0 bg-transparent rounded rounded-pill"" placeholder="Tu código postal" required aria-label="Tu código postal" aria-describedby="button-addon2">
+            <button class="btn btn-secondary roundedBtn" type="button" id="button-addon2">CALCULAR</button>
+          </div>
+        </div>
         </div>
       </div>
        </div>
