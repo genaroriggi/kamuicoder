@@ -904,4 +904,30 @@ h5{
     .logIn{
         align-content: flex-end;
     }
+
+    .shop{
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 0;
+    }
+    
+    .shopText{
+        color: #fffefd;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .shopTitle{
+        font-size: 5rem;
+        font-weight: 900;
+    } 
+    
+    .shopSub{
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: italic;
+        padding-top: 45rem;
+    }
 }
