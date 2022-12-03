@@ -10,8 +10,12 @@
 }
 
 html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+
+body{
+    background-color: #1b1c1e;
 }
 
 @media (min-width: 768px) {
@@ -21,6 +25,14 @@ html, body {
 
     #mobileLogo{
         display: none;
+    }
+
+    #inputHelpMob{
+        display: none;
+    }
+
+    body{
+        min-height: 100%;
     }
 }
 
@@ -40,10 +52,6 @@ html, body {
 .card:hover{
     background-color: #424242;
     transition: background-color 0.2s;
-}
-
-body{
-    background-color: #1b1c1e;
 }
 
 .mainBody{
@@ -126,6 +134,27 @@ h6{
 
 .btnUnirse{
     letter-spacing: 3px;
+}
+
+.btnBrown{
+    width: 10rem;
+    background-color: #cc9250;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.btn7Ro{
+    border-radius: 7px;
+    height: 40px;
+    width: 130px;
+    font-size: large;
+    color: #000000;
+    font-weight: 500;
+
 }
 
 .cartBtn{
@@ -219,9 +248,19 @@ h6{
     color: #cc9250;
 }
 
+.mainFooter{
+    font-size: 2rem;
+    background-color:#cc9250;
+}
+
 .footer{
     font-size: 2rem;
     background-color:#cc9250;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 .ig{
@@ -254,24 +293,23 @@ h5{
 .wrapAbout{
     padding-left: 20rem;
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-.aboutBody{
-    background: url(../assets/images/bkaboutus.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #1b1c1e;
+.maxVh{
+    height: 73.5vh;
+    overflow: hidden;
 }
 
 .aboutBody{
     background: url(../assets/images/bkaboutus.png);
-    width: 1920px;
-    height: 1080px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #1b1c1e;
+    background-position: center;
 }
 
 .wrapAboutText{
@@ -290,6 +328,16 @@ h5{
     font-weight: 600;
 }
 
+.wrapContactTit{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.wrapContactSub{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .shipForm {
     border-radius: 15px;
     width: 250px;
@@ -297,48 +345,91 @@ h5{
 }
 
 .wrapContact{
-    padding-left: 20rem;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-top: 3%;
+    justify-content: space-around;
 }
 
 .wrapContactText{
     color: #fffefd;
     text-align: start;
-    width: 65%;
+    width: 35%;
+    height: 50%;
+    padding-top: 5rem;
+    padding-left: 15rem;
+}
+
+.contactForm{
+    font-size: 10rem;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8rem;
+}
+
+.contactForm input{
+    display: block;
+    width: 100%;
+  	height: 3rem;
+    padding-left: 1.5rem;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: transparent;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:1px solid rgb(255, 255, 255, 0.400);
+    border-radius: 15px;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.contactForm textarea{
+    display: block;
+    width: 100%;
+    padding-left: 1.5rem;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: transparent;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:1px solid rgb(255, 255, 255, 0.400);
+    border-radius: 15px;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.contactForm input::placeholder{
+    font-size: 1.5rem;
 }
 
 .aboutForm{
     font-size: 5rem;
 }
 
-.logInForm{
-    font-size: 5rem;
-}
-
-.cart{
+.shop{
     padding-left: 20rem;
-    width: 99vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    padding-top: 10rem;
 }
 
-.cartText{
+.shopText{
     color: #fffefd;
     text-align: start;
     width: 100%;
 }
 
-.cartTitle{
+.shopTitle{
     font-size: 5rem;
     font-weight: 900;
 } 
 
-.cartSub{
+.shopSub{
     font-size: 2rem;
     font-weight: 300;
     font-style: italic;
@@ -365,6 +456,14 @@ h5{
 
 .artPad{
     padding-bottom: 4rem;
+}
+
+.wrapLogIn{
+    padding-top: 7.5%;
+}
+
+.logIn{
+    height: 30rem;
 }
 
 .pubSelect{
@@ -484,6 +583,10 @@ h5{
     }
 
     #logo{
+        display: none;
+    }
+
+    #inputHelpDesk{
         display: none;
     }
 
@@ -607,9 +710,13 @@ h5{
         background: transparent;
     }
 
-    .footer{
-        height: 205.5px;
-    }
+    .mainFooter {
+        height: 205.5px;            
+      }
+
+    .footer {
+        height: 205.5px;            
+      }
 
     .footericons{
         display: flex;
@@ -711,5 +818,90 @@ h5{
 
     .cartBtn{
         margin-top: 0;
+    }
+
+    .aboutBody{
+        background: url(../assets/images/bkaboutusmob.png);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #1b1c1e;
+    }
+
+    .wrapAbout{
+        padding-left: 3rem;
+        width: 90rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .maxVhMob{
+        height: 73vh;
+    }
+
+    .wrapContact{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .wrapContactText{
+        color: #fffefd;
+        width: 100vw;
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .contactForm{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100vw;
+        font-size: 8rem;
+        height: 60%;
+        bottom: 0;
+    }
+    
+    .contactForm input{
+        display: block;
+        background: transparent;
+        font-family: 
+        'Quicksand', sans-serif;
+        border: 0;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.400);
+        border-radius: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    
+    .contactForm input::placeholder{
+        font-size: 0;
+    }
+
+    .wrapContactTit{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    
+    .wrapContactSub{
+        font-size: 1.87rem;
+        font-weight: 600;
+    }
+
+    .contactMob{
+        margin-top: 0;
+    }
+
+    .wrapLogIn{
+        padding-top: 0;
+        height: 100%;
+    }
+
+    .logInForm{
+        padding-top: 4rem;
+    }
+
+    .logIn{
+        align-content: flex-end;
     }
 }

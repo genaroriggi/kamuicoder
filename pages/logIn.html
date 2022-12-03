@@ -41,28 +41,30 @@
             </ul>
         </nav>
     </header>
-<main>
+<main class="maxVh maxVhMob">
     <div>
-        <div class="wrapContact">
-            <div class="wrapContactText">
-                <h1 class="wrapAboutTit">Iniciar sesión</h1>
-                <p class="wrapAboutSub">¿Quieres que todos tus datos de facturación y entrega queden guardados además de tu historial y carro de compras? Inicia sesión para acceder a todos los beneficios.</p>
-            </div>
-            <section class="logInForm">
-                <div>
-                    <label for="">Email</label>
-                    <input type="email" required>
-                </div>
-                <div>
-                    <label for="">Contraseña</label>
-                    <input type="password" required>
-                </div>
-                <div>
-                    <button>Enviar</button>
-                </div>
-            </section>
-        </div>
-    </div>
+      <div class="wrapContact wrapLogIn">
+          <div class="wrapContactText">
+              <h1 class="wrapContactTit">Iniciar sesión</h1>
+              <p class="wrapContactSub">¿Quieres que todos tus datos de facturación y entrega queden guardados además de tu historial y carro de compras? Inicia sesión para acceder a todos los beneficios.</p>
+          </div>
+          <section class="contactForm logInForm">
+              <div class="row row-cols-1 contactMob logIn">
+                  <div class="col-lg-10">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@mail.com">
+                  </div>
+                  <div class="col-lg-10">
+                    <label for="inputPw" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPw">
+                  </div>
+                  <div class="col-lg-12">
+                      <button type="submit" class="btn btnBrown btn7Ro" disabled>Enviar</button>
+                    </div>
+              </div>
+          </section>
+      </div>
+  </div>
 </main>
 <footer class="footer">
     <div class="ig">
