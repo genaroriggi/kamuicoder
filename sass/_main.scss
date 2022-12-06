@@ -1,0 +1,143 @@
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 25vh;
+    justify-content: center;
+
+}
+
+.wrapText{
+    text-align: center;
+    color: $color-blanco;
+    width: 50%;
+    background: transparent;
+}
+
+.wraptit{
+    font-size: 4rem;
+    background: transparent;
+}
+
+.wrapsub{
+    font-size: 2rem;
+    background: transparent;
+}
+
+.wrapAbout{
+    padding-left: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.wrapAboutText{
+    color: #fffefd;
+    text-align: start;
+    width: 35%;
+}
+
+.wrapAboutTit{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.wrapAboutSub{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.wrapContact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-around;
+}
+
+.wrapContactText{
+    color: #fffefd;
+    text-align: start;
+    width: 35%;
+    height: 50%;
+    padding-top: 5rem;
+    padding-left: 15rem;
+}
+
+.shop{
+    padding-left: 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 10rem;
+}
+
+.shopText{
+    color: #fffefd;
+    text-align: start;
+    width: 100%;
+}
+
+.shopTitle{
+    font-size: 5rem;
+    font-weight: 900;
+} 
+
+.shopSub{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.pubImg{
+    padding-left: 3rem;
+    width: 50vw;
+    padding-bottom: 9.4rem;
+}
+
+.pub{
+    display: flex;
+}
+
+.prod{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.pubs{
+    @include pubs;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.pubInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    padding-left: 10rem;
+}
+
+.pubInfo span{
+    color: $color-secundario;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.wrapContactTit{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.wrapContactSub{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pubSelect{
+    display: flex;
+    justify-content: space-between;
+}
+

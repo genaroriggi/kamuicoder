@@ -1,0 +1,36 @@
+h6{
+    color: $color-primario;
+    background: transparent;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+h5{
+    color: $color-primario;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.artName{
+    font-size: 5rem;
+}
+
+.tituloPub{
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+}
+
+.precioPub{
+    font-size: 2rem;
+    color: $color-secundario;
+}
+
+.artPrice{
+    color: $color-secundario;
+    font-size: 4rem;
+}

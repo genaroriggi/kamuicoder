@@ -1,0 +1,25 @@
+{
+  "name": "kamui",
+  "version": "1.0.0",
+  "description": "Proyecto de coder kamui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genaroriggi/kamuicoder.git"
+  },
+  "author": "Genaro Riggi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genaroriggi/kamuicoder/issues"
+  },
+  "homepage": "https://github.com/genaroriggi/kamuicoder#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

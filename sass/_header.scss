@@ -1,0 +1,24 @@
+.header{
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transition: background-color 0.25s;
+    z-index: 99;
+}
+
+.header:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.headerNav{
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+
+nav ul li img{
+    height: 32px;
+    background: transparent;
+}

@@ -1,0 +1,366 @@
+@media (max-width: 767px){
+
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .bottomFixed{
+        background:transparent;
+        overflow: hidden;
+        position: fixed;
+        bottom: -20px;
+        width: 100%;
+        justify-content: center;
+        height: 100px;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #inputHelpDesk{
+        display: none;
+    }
+
+    .header:hover{
+        background:transparent;
+    }
+
+    .mobileSearch{
+        position: fixed;
+        top: 2rem;
+        left: 50%;
+        margin-left: -100px;
+        z-index: 99;
+        width: 200px;
+    }
+
+    .searchForm{
+        display: none;
+    }
+
+    nav ul{
+        width: 100%;
+        bottom: 0;
+    }
+
+    nav ul li{
+        height: 64px;
+        bottom: 0;
+    }
+
+    .bottomFixed a {
+        float: left;
+        display: flex;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+      }
+
+    nav{
+        display: flex;
+        text-align: center;
+    }
+
+    nav #nosotros{order: 2;}
+    nav #contacto{order: 1;}
+    nav #carro{order: 4;}
+    nav #logIn{order: 5;}
+    nav #mobileLogo{width: 80px; height: 80px; order: 3;}
+
+    #mobileLogo{
+        background: $color-secundario;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 1rem 0.3rem $color-primario;
+    }
+
+    .headerNav{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        background-color: $color-primario;
+        box-shadow: 0 0 1rem 0.3rem $color-primario;
+    }
+
+    #mobileNav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-brand img{
+        filter: invert(100);
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainBody{
+        background: url(../assets/images/backgroundmob.png);
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: $color-primario;
+    }
+
+    .wrap{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding-top: 30vh;
+        justify-content: center;
+    
+    }
+    
+    .wrapText{
+        text-align: center;
+        color: #fffefd;
+        width: 100%;
+        background: transparent;
+    }
+    
+    .wraptit{
+        font-size: 3rem;
+        background: transparent;
+    }
+    
+    .wrapsub{
+        font-size: 1.5rem;
+        background: transparent;
+    }
+
+    .mainFooter {
+        height: 205.5px;            
+      }
+
+    .footer {
+        height: 205.5px;            
+      }
+
+    .footericons{
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        margin-right: 1rem;
+    }
+
+    .gmap{
+        width: 380px;
+        height: 403.703px;
+    }
+
+    .pub{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pubInfo{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: start;
+    }
+
+    .pubImg{
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100vw;
+    }
+    
+    .artName{
+        font-size: 3rem;
+        text-align: left;
+    }
+    
+    .artPrice{
+        color: $color-secundario;
+        font-size: 2.5rem;
+    }
+    
+    .artPad{
+        padding-bottom: 1rem;
+    }
+
+    .pubSelect{
+        width: 100%;
+    }
+
+    .content-select{
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .content-select label{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    
+    .content-select select{
+        padding-right: 0rem;
+    }
+    
+    .optionCart{
+        color: $color-primario;
+        font-size: 1.5rem;
+        background-color: $color-secundario;
+        font-weight: 600;
+    }
+    
+    .content-select i{
+        position: absolute;
+        right: 2.5rem;
+        top: 37%;
+        width: 5px;
+        height: 5px;
+        display: block;
+        border-left:1px solid $color-outline;
+        border-bottom:1px solid $color-outline;
+        transform: rotate(-45deg);
+        transition: all 0.25s ease;
+    }
+     
+    .content-select:hover i{
+        margin-top: 3px;
+        border-left-color: $color-primario;
+        border-bottom-color: $color-primario;
+    }
+
+    .cartStock{
+        align-self: center;
+    }
+
+    .btnro{
+        border-radius: 10px;
+        height: 4rem;
+    }
+
+    .cartBtn{
+        margin-top: 0;
+    }
+
+    .aboutBody{
+        background: url(../assets/images/bkaboutusmob.png);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-primario;
+    }
+
+    .wrapAbout{
+        padding-left: 3rem;
+        width: 90rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .maxVhMob{
+        height: 73vh;
+    }
+
+    .wrapContact{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .wrapContactText{
+        color: #fffefd;
+        width: 100vw;
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .contactForm{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100vw;
+        font-size: 8rem;
+        height: 60%;
+        bottom: 0;
+    }
+    
+    .contactForm input{
+        display: block;
+        background: transparent;
+        font-family: 
+        'Quicksand', sans-serif;
+        border: 0;
+        border-bottom: 1px solid $color-outline;
+        border-radius: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    
+    .contactForm input::placeholder{
+        font-size: 0;
+    }
+
+    .wrapContactTit{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    
+    .wrapContactSub{
+        font-size: 1.87rem;
+        font-weight: 600;
+    }
+
+    .contactMob{
+        margin-top: 0;
+    }
+
+    .wrapLogIn{
+        padding-top: 0;
+        height: 100%;
+    }
+
+    .logInForm{
+        padding-top: 4rem;
+    }
+
+    .logIn{
+        align-content: flex-end;
+    }
+
+    .shop{
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 0;
+    }
+    
+    .shopText{
+        color: #fffefd;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .shopTitle{
+        font-size: 5rem;
+        font-weight: 900;
+    } 
+    
+    .shopSub{
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: italic;
+        padding-top: 45rem;
+    }
+}

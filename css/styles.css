@@ -1,933 +1,720 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    color: #fffefd;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color: #fffefd;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  list-style-type: none; }
+
+.card:hover {
+  background-color: #424242;
+  transition: background-color 0.2s; }
+
+.btnro {
+  border-radius: 15px; }
+
+.formControl::placeholder {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic; }
+
+.searchForm {
+  padding-left: 2rem; }
+
+.invertImg {
+  filter: invert(100); }
+
+.outlineSearch {
+  outline-color: rgba(255, 255, 255, 0.4);
+  outline-style: solid;
+  outline-width: 1px; }
+
+.btnUnirse {
+  letter-spacing: 3px; }
+
+.btnBrown {
+  width: 10rem;
+  background-color: #cc9250;
+  color: #1b1c1e;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem; }
+
+.btn7Ro {
+  border-radius: 7px;
+  height: 40px;
+  width: 130px;
+  font-size: large;
+  color: #1b1c1e;
+  font-weight: 500; }
+
+.cartBtn {
+  letter-spacing: 7px;
+  height: 35px;
+  width: 300px;
+  background-color: #cc9250;
+  color: #1b1c1e;
+  border-radius: 50px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem; }
+
+.cartBtn:hover {
+  color: #1b1c1e;
+  background: gray;
+  cursor: default; }
+
+.cartText {
+  font-size: 1.3rem !important;
+  font-weight: 300 !important;
+  color: #1b1c1e !important;
+  padding: 0 !important; }
+
+.roundedBtn {
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.cartStock button:hover span {
+  display: none; }
+
+.cartStock button:hover:before {
+  content: "SIN STOCK"; }
+
+.btnUnirse:hover {
+  color: #fffefd;
+  background: rgba(0, 0, 0, 0.5);
+  border-color: #fffefd; }
+
+.contactForm {
+  font-size: 10rem;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8rem; }
+
+.contactForm input {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding-left: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  position: relative;
+  font-size: 1.5rem; }
+
+.contactForm textarea {
+  display: block;
+  width: 100%;
+  padding-left: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  position: relative;
+  font-size: 1.5rem; }
+
+.contactForm input::placeholder {
+  font-size: 1.5rem; }
+
+.aboutForm {
+  font-size: 5rem; }
+
+.shipForm {
+  border-radius: 15px;
+  width: 250px;
+  height: 30px; }
+
+.content-input,
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+#cCard {
+  width: 3rem;
+  object-fit: contain; }
+
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.content-select select::-ms-expand {
+  display: none; }
+
+.content-select {
+  width: 27rem;
+  position: relative;
+  padding-right: 2rem; }
+
+.content-select label {
+  font-size: 1.75rem;
+  font-weight: 100; }
+
+.content-select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 3rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.25s ease;
+  font-size: 1.15rem;
+  padding-right: 15rem;
+  margin-bottom: 4rem; }
+
+.content-select select:hover {
+  background: #cc9250;
+  color: #1b1c1e;
+  border-color: #1b1c1e; }
+
+.optionCart {
+  color: #1b1c1e;
+  font-size: 1.5rem;
+  background-color: #cc9250;
+  font-weight: 600; }
+
+.content-select i {
+  position: absolute;
+  right: 40px;
+  top: 37%;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(-45deg);
+  transition: all 0.25s ease; }
+
+.content-select:hover i {
+  margin-top: 3px;
+  border-left-color: #1b1c1e;
+  border-bottom-color: #1b1c1e; }
+
+.gmap {
+  width: 478px;
+  height: 401.859px; }
+
+h6 {
+  color: #1b1c1e;
+  background: transparent;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem; }
+
+h5 {
+  color: #1b1c1e;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.artName {
+  font-size: 5rem; }
+
+.tituloPub {
+  font-size: large;
+  font-style: italic;
+  text-align: center; }
+
+.precioPub {
+  font-size: 2rem;
+  color: #cc9250; }
+
+.artPrice {
+  color: #cc9250;
+  font-size: 4rem; }
+
+.header {
+  position: sticky;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: background-color 0.25s;
+  z-index: 99; }
+
+.header:hover {
+  background-color: rgba(0, 0, 0, 0.705); }
+
+.headerNav {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  text-align: end; }
+
+nav ul li img {
+  height: 32px;
+  background: transparent; }
 
 html, body {
-    max-width: 100vw !important;
-}
+  max-width: 100vw !important; }
 
-
-body{
-    background-color: #1b1c1e;
-}
+body {
+  background-color: #1b1c1e; }
 
 @media (min-width: 768px) {
-    .mobileSearch{
-        display: none;
-    }
+  .mobileSearch {
+    display: none; }
+  #mobileLogo {
+    display: none; }
+  #inputHelpMob {
+    display: none; }
+  body {
+    min-height: 100%; } }
 
-    #mobileLogo{
-        display: none;
-    }
+.mainBody {
+  background: url(../assets/images/background.png);
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #1b1c1e; }
 
-    #inputHelpMob{
-        display: none;
-    }
+.maxVh {
+  height: 73.5vh;
+  overflow: auto; }
 
-    body{
-        min-height: 100%;
-    }
-}
+.aboutBody {
+  background: url(../assets/images/bkaboutus.png);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1b1c1e;
+  background-position: center; }
 
-.header{
-    position: sticky;
-    top: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    transition: background-color 0.25s;
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 25vh;
+  justify-content: center; }
+
+.wrapText {
+  text-align: center;
+  color: #fffefd;
+  width: 50%;
+  background: transparent; }
+
+.wraptit {
+  font-size: 4rem;
+  background: transparent; }
+
+.wrapsub {
+  font-size: 2rem;
+  background: transparent; }
+
+.wrapAbout {
+  padding-left: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start; }
+
+.wrapAboutText {
+  color: #fffefd;
+  text-align: start;
+  width: 35%; }
+
+.wrapAboutTit {
+  font-size: 3rem;
+  font-weight: bolder; }
+
+.wrapAboutSub {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.wrapContact {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  padding-top: 3%;
+  justify-content: space-around; }
+
+.wrapContactText {
+  color: #fffefd;
+  text-align: start;
+  width: 35%;
+  height: 50%;
+  padding-top: 5rem;
+  padding-left: 15rem; }
+
+.shop {
+  padding-left: 20rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 10rem; }
+
+.shopText {
+  color: #fffefd;
+  text-align: start;
+  width: 100%; }
+
+.shopTitle {
+  font-size: 5rem;
+  font-weight: 900; }
+
+.shopSub {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic; }
+
+.pubImg {
+  padding-left: 3rem;
+  width: 50vw;
+  padding-bottom: 9.4rem; }
+
+.pub {
+  display: flex; }
+
+.prod {
+  text-align: center;
+  font-size: 5rem; }
+
+.pubs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem; }
+
+.pubInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  padding-left: 10rem; }
+
+.pubInfo span {
+  color: #cc9250;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem; }
+
+.wrapContactTit {
+  font-size: 3rem;
+  font-weight: bolder; }
+
+.wrapContactSub {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.pubSelect {
+  display: flex;
+  justify-content: space-between; }
+
+.mainFooter {
+  font-size: 2rem;
+  background-color: #cc9250; }
+
+.footer {
+  font-size: 2rem;
+  background-color: #cc9250;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+
+.ig {
+  display: flex;
+  justify-content: center;
+  color: #1b1c1e;
+  background: transparent;
+  padding-top: 1rem; }
+
+#followUs {
+  text-align: center; }
+
+.footericons {
+  text-align: end;
+  background: transparent;
+  margin-right: 1rem; }
+
+.borderImg {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem; }
+
+.artPad {
+  padding-bottom: 4rem; }
+
+.wrapLogIn {
+  padding-top: 7.5%; }
+
+.logIn {
+  height: 30rem; }
+
+@media (max-width: 767px) {
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .bottomFixed {
+    background: transparent;
+    overflow: hidden;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    justify-content: center;
+    height: 100px; }
+  #logo {
+    display: none; }
+  #inputHelpDesk {
+    display: none; }
+  .header:hover {
+    background: transparent; }
+  .mobileSearch {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    margin-left: -100px;
     z-index: 99;
-}
-
-.header:hover{
-    background-color: rgba(0, 0, 0, 0.705);
-}
-
-.card:hover{
-    background-color: #424242;
-    transition: background-color 0.2s;
-}
-
-.mainBody{
-    background: url(../assets/images/background.png);
+    width: 200px; }
+  .searchForm {
+    display: none; }
+  nav ul {
+    width: 100%;
+    bottom: 0; }
+  nav ul li {
+    height: 64px;
+    bottom: 0; }
+  .bottomFixed a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none; }
+  nav {
+    display: flex;
+    text-align: center; }
+  nav #nosotros {
+    order: 2; }
+  nav #contacto {
+    order: 1; }
+  nav #carro {
+    order: 4; }
+  nav #logIn {
+    order: 5; }
+  nav #mobileLogo {
+    width: 80px;
+    height: 80px;
+    order: 3; }
+  #mobileLogo {
+    background: #cc9250;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem 0.3rem #1b1c1e; }
+  .headerNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: #1b1c1e;
+    box-shadow: 0 0 1rem 0.3rem #1b1c1e; }
+  #mobileNav {
+    display: flex;
+    justify-content: space-between; }
+  .navbar-brand img {
+    filter: invert(100); }
+  ul {
+    margin: 0;
+    padding: 0; }
+  li {
+    padding: 0;
+    margin: 0; }
+  .mainBody {
+    background: url(../assets/images/backgroundmob.png);
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #1b1c1e;
-}
-
-.btnro{
-    border-radius: 15px;
-}
-
-.formControl::placeholder {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.5);
-    font-style: italic;
-  }
-
-.searchForm{
-    padding-left: 2rem;
-}
-
-.invertImg{
-    filter: invert();
-}
-
-.outlineSearch{
-    outline-color: rgb(255, 255, 255, 0.400);
-    outline-style: solid;
-    outline-width: 1px;
-}
-
-.headerNav{
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
-    text-align: end;
-}
-
-nav ul li img{
-    height: 32px;
-    background: transparent;
-}
-
-h6{
-    color: #1b1c1e;
-    background: transparent;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.wrap{
+    background-color: #1b1c1e; }
+  .wrap {
     width: 100%;
     height: 100vh;
     display: flex;
-    padding-top: 25vh;
-    justify-content: center;
-
-}
-
-.wrapText{
+    padding-top: 30vh;
+    justify-content: center; }
+  .wrapText {
     text-align: center;
     color: #fffefd;
-    width: 50%;
-    background: transparent;
-}
-
-.wraptit{
-    font-size: 4rem;
-    background: transparent;
-}
-
-.wrapsub{
-    font-size: 2rem;
-    background: transparent;
-}
-
-.btnUnirse{
-    letter-spacing: 3px;
-}
-
-.btnBrown{
-    width: 10rem;
-    background-color: #cc9250;
-    color: #000000;
-    border-radius: 10px;
-    font-weight: 300;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.btn7Ro{
-    border-radius: 7px;
-    height: 40px;
-    width: 130px;
-    font-size: large;
-    color: #000000;
-    font-weight: 500;
-
-}
-
-.cartBtn{
-    letter-spacing: 7px;
-    height: 35px;
-    width: 300px;
-    background-color: #cc9250;
-    color: #1b1c1e;
-    border-radius: 50px;
-    font-weight: 300;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.cartBtn:hover{
-    color: #1b1c1e;
-    background: gray;
-    cursor: default;
-}
-
-.cartText{
-    font-size: 1.3rem !important;
-    font-weight: 300 !important;
-    color: #1b1c1e !important;
-    padding: 0 !important;
-}
-
-.roundedBtn{
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.cartStock button:hover span {
-    display: none
-  }
-  
-.cartStock button:hover:before {
-    content: "SIN STOCK"
-  }
-
-.btnUnirse:hover{
-    color: #fffefd;
-    background: rgba(0, 0, 0, 0.5);
-    border-color: #fffefd;
-}
-
-.prod{
-    text-align: center;
-    font-size: 5rem;
-}
-
-.pubs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.pubInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 2rem;
-    padding-left: 10rem;
-}
-
-.pubInfo span{
-    color: #cc9250;
-    font-size: 2rem;
-    font-weight: 700;
-    padding-left: 1rem;
-}
-
-.borderImg{ 
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
-
-.tituloPub{
-    font-size: large;
-    font-style: italic;
-    text-align: center;
-}
-
-.precioPub{
-    font-size: 2rem;
-    color: #cc9250;
-}
-
-.mainFooter{
-    font-size: 2rem;
-    background-color:#cc9250;
-}
-
-.footer{
-    font-size: 2rem;
-    background-color:#cc9250;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-
-.ig{
-    display: flex;
-    justify-content: center;
-    color: #1b1c1e;
-    background: transparent;
-    padding-top: 1rem;
-}
-
-#followUs{
-    text-align: center;
-}
-
-h5{
-    color: #1b1c1e;
-    margin-left: 0.5rem;
-    font-size: 2rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.footericons{
-    text-align: end;
-    background: transparent;
-    margin-right: 1rem;
-}
-
-.wrapAbout{
-    padding-left: 20rem;
     width: 100%;
+    background: transparent; }
+  .wraptit {
+    font-size: 3rem;
+    background: transparent; }
+  .wrapsub {
+    font-size: 1.5rem;
+    background: transparent; }
+  .mainFooter {
+    height: 205.5px; }
+  .footer {
+    height: 205.5px; }
+  .footericons {
     display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.maxVh{
-    height: 73.5vh;
-    overflow: hidden;
-}
-
-.aboutBody{
-    background: url(../assets/images/bkaboutus.png);
+    justify-content: space-between;
+    background: transparent;
+    margin-right: 1rem; }
+  .gmap {
+    width: 380px;
+    height: 403.703px; }
+  .pub {
+    display: flex;
+    flex-direction: column; }
+  .pubInfo {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: start; }
+  .pubImg {
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100vw; }
+  .artName {
+    font-size: 3rem;
+    text-align: left; }
+  .artPrice {
+    color: #cc9250;
+    font-size: 2.5rem; }
+  .artPad {
+    padding-bottom: 1rem; }
+  .pubSelect {
+    width: 100%; }
+  .content-select {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  .content-select label {
+    font-size: 1.5rem;
+    font-weight: 100; }
+  .content-select select {
+    padding-right: 0rem; }
+  .optionCart {
+    color: #1b1c1e;
+    font-size: 1.5rem;
+    background-color: #cc9250;
+    font-weight: 600; }
+  .content-select i {
+    position: absolute;
+    right: 2.5rem;
+    top: 37%;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    transform: rotate(-45deg);
+    transition: all 0.25s ease; }
+  .content-select:hover i {
+    margin-top: 3px;
+    border-left-color: #1b1c1e;
+    border-bottom-color: #1b1c1e; }
+  .cartStock {
+    align-self: center; }
+  .btnro {
+    border-radius: 10px;
+    height: 4rem; }
+  .cartBtn {
+    margin-top: 0; }
+  .aboutBody {
+    background: url(../assets/images/bkaboutusmob.png);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #1b1c1e;
-    background-position: center;
-}
-
-.wrapAboutText{
-    color: #fffefd;
-    text-align: start;
-    width: 35%;
-}
-
-.wrapAboutTit{
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-.wrapAboutSub{
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.wrapContactTit{
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-.wrapContactSub{
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.shipForm {
-    border-radius: 15px;
-    width: 250px;
-    height: 30px;
-}
-
-.wrapContact{
-    width: 100%;
-    height: 50vh;
+    background-color: #1b1c1e; }
+  .wrapAbout {
+    padding-left: 3rem;
+    width: 90rem;
     display: flex;
-    padding-top: 3%;
-    justify-content: space-around;
-}
-
-.wrapContactText{
-    color: #fffefd;
-    text-align: start;
-    width: 35%;
-    height: 50%;
-    padding-top: 5rem;
-    padding-left: 15rem;
-}
-
-.contactForm{
-    font-size: 10rem;
-    width: 35%;
+    align-items: center;
+    justify-content: start; }
+  .maxVhMob {
+    height: 73vh; }
+  .wrapContact {
     display: flex;
-    justify-content: space-between;
-    padding-right: 8rem;
-}
-
-.contactForm input{
+    flex-direction: column;
+    padding-top: 0; }
+  .wrapContactText {
+    color: #fffefd;
+    width: 100vw;
+    padding: 3rem;
+    padding-top: 0; }
+  .contactForm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100vw;
+    font-size: 8rem;
+    height: 60%;
+    bottom: 0; }
+  .contactForm input {
     display: block;
-    width: 100%;
-  	height: 3rem;
-    padding-left: 1.5rem;
-  	outline: 0; 
-  	border: 0;
-	border-radius: 0;
-	background: transparent;
-	font-family: 
-	'Quicksand', sans-serif;
-	border:1px solid rgb(255, 255, 255, 0.400);
-    border-radius: 15px;
-    position: relative;
-    font-size: 1.5rem;
-}
-
-.contactForm textarea{
-    display: block;
-    width: 100%;
-    padding-left: 1.5rem;
-  	outline: 0; 
-  	border: 0;
-	border-radius: 0;
-	background: transparent;
-	font-family: 
-	'Quicksand', sans-serif;
-	border:1px solid rgb(255, 255, 255, 0.400);
-    border-radius: 15px;
-    position: relative;
-    font-size: 1.5rem;
-}
-
-.contactForm input::placeholder{
-    font-size: 1.5rem;
-}
-
-.aboutForm{
-    font-size: 5rem;
-}
-
-.shop{
-    padding-left: 20rem;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .contactForm input::placeholder {
+    font-size: 0; }
+  .wrapContactTit {
+    font-size: 4rem;
+    font-weight: bolder; }
+  .wrapContactSub {
+    font-size: 1.87rem;
+    font-weight: 600; }
+  .contactMob {
+    margin-top: 0; }
+  .wrapLogIn {
+    padding-top: 0;
+    height: 100%; }
+  .logInForm {
+    padding-top: 4rem; }
+  .logIn {
+    align-content: flex-end; }
+  .shop {
+    padding: 2rem;
     width: 100%;
     height: 100%;
     display: flex;
-    padding-top: 10rem;
-}
-
-.shopText{
+    padding-top: 0; }
+  .shopText {
     color: #fffefd;
-    text-align: start;
-    width: 100%;
-}
-
-.shopTitle{
+    text-align: center;
+    width: 100%; }
+  .shopTitle {
     font-size: 5rem;
-    font-weight: 900;
-} 
-
-.shopSub{
+    font-weight: 900; }
+  .shopSub {
     font-size: 2rem;
     font-weight: 300;
     font-style: italic;
-}
-
-.pubImg{
-    padding-left: 3rem;
-    width: 50vw;
-    padding-bottom: 9.4rem;
-}
-
-.pub{
-    display: flex;
-}
-
-.artName{
-    font-size: 5rem;
-}
-
-.artPrice{
-    color: #cc9250;
-    font-size: 4rem;
-}
-
-.artPad{
-    padding-bottom: 4rem;
-}
-
-.wrapLogIn{
-    padding-top: 7.5%;
-}
-
-.logIn{
-    height: 30rem;
-}
-
-.pubSelect{
-    display: flex;
-    justify-content: space-between;
-}
-
-.content-input,
-.content-select select{
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-#cCard{
-    width: 3rem;
-    object-fit: contain;
-}
-
-.content-select select{
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.content-selectr select::-ms-expand{
-    display: none;
-}
-
-.content-select{
-    width: 27rem;
-    position: relative;
-    padding-right: 2rem;
-}
-
-.content-select label{
-    font-size: 1.75rem;
-    font-weight: 100;
-}
-
-.content-select select{
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-  	padding: 7px 10px;
-  	height: 3rem;
-  	outline: 0; 
-  	border: 0;
-	border-radius: 0;
-	background: transparent;
-	color: rgb(255, 255, 255, 0.400);
-	font-size: 1em;
-	color: rgb(255, 255, 255, 0.400);
-	font-family: 
-	'Quicksand', sans-serif;
-	border:1px solid rgb(255, 255, 255, 0.400);
-    border-radius: 15px;
-    position: relative;
-    transition: all 0.25s ease;
-    font-size: 1.15rem;
-    padding-right: 15rem;
-    margin-bottom: 4rem;
-}
-
-.content-select select:hover{
-	background: #cc9250;
-    color: #1b1c1e;
-    border-color: #1b1c1e;
-}
-
-.optionCart{
-    color: #1b1c1e;
-    font-size: 1.5rem;
-    background-color: #cc9250;
-    font-weight: 600;
-}
-
-.content-select i{
-	position: absolute;
-	right: 40px;
-	top: 37%;
-	width: 5px;
-	height: 5px;
-	display: block;
-	border-left:1px solid rgb(255, 255, 255, 0.400);
-	border-bottom:1px solid rgb(255, 255, 255, 0.400);
-	transform: rotate(-45deg);
-	transition: all 0.25s ease;
-}
- 
-.content-select:hover i{
-	margin-top: 3px;
-    border-left-color: #1b1c1e;
-    border-bottom-color: #1b1c1e;
-}
-
-.gmap{
-    width: 478px;
-    height: 401.859px;
-}
-
-@media (max-width: 767px){
-
-    html, body {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-
-    .bottomFixed{
-        background:transparent;
-        overflow: hidden;
-        position: fixed;
-        bottom: -20px;
-        width: 100%;
-        justify-content: center;
-        height: 100px;
-    }
-
-    #logo{
-        display: none;
-    }
-
-    #inputHelpDesk{
-        display: none;
-    }
-
-    .header:hover{
-        background:transparent;
-    }
-
-    .mobileSearch{
-        position: fixed;
-        top: 2rem;
-        left: 50%;
-        margin-left: -100px;
-        z-index: 99;
-        width: 200px;
-    }
-
-    .searchForm{
-        display: none;
-    }
-
-    nav ul{
-        width: 100%;
-        bottom: 0;
-    }
-
-    nav ul li{
-        height: 64px;
-        bottom: 0;
-    }
-
-    .bottomFixed a {
-        float: left;
-        display: flex;
-        color: #f2f2f2;
-        text-align: center;
-        text-decoration: none;
-      }
-
-    nav{
-        display: flex;
-        text-align: center;
-    }
-
-    nav #nosotros{order: 2;}
-    nav #contacto{order: 1;}
-    nav #carro{order: 4;}
-    nav #logIn{order: 5;}
-    nav #mobileLogo{width: 80px; height: 80px; order: 3;}
-
-    #mobileLogo{
-        background: #cc9250;
-        border-radius: 50%;
-        width: 48px;
-        height: 48px;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 1rem 0.3rem #1b1c1e8f;
-    }
-
-    .headerNav{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-        background-color: #1b1c1e;
-        box-shadow: 0 0 1rem 0.3rem #1b1c1e8f;
-    }
-
-    #mobileNav{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .navbar-brand img{
-        filter: invert();
-    }
-
-    ul{
-        margin: 0;
-        padding: 0;
-    }
-
-    li{
-        padding: 0;
-        margin: 0;
-    }
-
-    .mainBody{
-        background: url(../assets/images/backgroundmob.png);
-        height: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: #1b1c1e;
-    }
-
-    .wrap{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        padding-top: 30vh;
-        justify-content: center;
-    
-    }
-    
-    .wrapText{
-        text-align: center;
-        color: #fffefd;
-        width: 100%;
-        background: transparent;
-    }
-    
-    .wraptit{
-        font-size: 3rem;
-        background: transparent;
-    }
-    
-    .wrapsub{
-        font-size: 1.5rem;
-        background: transparent;
-    }
-
-    .mainFooter {
-        height: 205.5px;            
-      }
-
-    .footer {
-        height: 205.5px;            
-      }
-
-    .footericons{
-        display: flex;
-        justify-content: space-between;
-        background: transparent;
-        margin-right: 1rem;
-    }
-
-    .gmap{
-        width: 380px;
-        height: 403.703px;
-    }
-
-    .pub{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .pubInfo{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: start;
-    }
-
-    .pubImg{
-        padding: 2rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 100vw;
-    }
-    
-    .artName{
-        font-size: 3rem;
-        text-align: left;
-    }
-    
-    .artPrice{
-        color: #cc9250;
-        font-size: 2.5rem;
-    }
-    
-    .artPad{
-        padding-bottom: 1rem;
-    }
-
-    .pubSelect{
-        width: 100%;
-    }
-
-    .content-select{
-        width: 100%;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-    
-    .content-select label{
-        font-size: 1.5rem;
-        font-weight: 100;
-    }
-    
-    .content-select select{
-        padding-right: 0rem;
-    }
-    
-    .optionCart{
-        color: #1b1c1e;
-        font-size: 1.5rem;
-        background-color: #cc9250;
-        font-weight: 600;
-    }
-    
-    .content-select i{
-        position: absolute;
-        right: 2.5rem;
-        top: 37%;
-        width: 5px;
-        height: 5px;
-        display: block;
-        border-left:1px solid rgb(255, 255, 255, 0.400);
-        border-bottom:1px solid rgb(255, 255, 255, 0.400);
-        transform: rotate(-45deg);
-        transition: all 0.25s ease;
-    }
-     
-    .content-select:hover i{
-        margin-top: 3px;
-        border-left-color: #1b1c1e;
-        border-bottom-color: #1b1c1e;
-    }
-
-    .cartStock{
-        align-self: center;
-    }
-
-    .btnro{
-        border-radius: 10px;
-        height: 4rem;
-    }
-
-    .cartBtn{
-        margin-top: 0;
-    }
-
-    .aboutBody{
-        background: url(../assets/images/bkaboutusmob.png);
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #1b1c1e;
-    }
-
-    .wrapAbout{
-        padding-left: 3rem;
-        width: 90rem;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-
-    .maxVhMob{
-        height: 73vh;
-    }
-
-    .wrapContact{
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-    }
-
-    .wrapContactText{
-        color: #fffefd;
-        width: 100vw;
-        padding: 3rem;
-        padding-top: 0;
-    }
-
-    .contactForm{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        width: 100vw;
-        font-size: 8rem;
-        height: 60%;
-        bottom: 0;
-    }
-    
-    .contactForm input{
-        display: block;
-        background: transparent;
-        font-family: 
-        'Quicksand', sans-serif;
-        border: 0;
-        border-bottom: 1px solid rgb(255, 255, 255, 0.400);
-        border-radius: 0;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
-    }
-    
-    .contactForm input::placeholder{
-        font-size: 0;
-    }
-
-    .wrapContactTit{
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-    
-    .wrapContactSub{
-        font-size: 1.87rem;
-        font-weight: 600;
-    }
-
-    .contactMob{
-        margin-top: 0;
-    }
-
-    .wrapLogIn{
-        padding-top: 0;
-        height: 100%;
-    }
-
-    .logInForm{
-        padding-top: 4rem;
-    }
-
-    .logIn{
-        align-content: flex-end;
-    }
-
-    .shop{
-        padding: 2rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        padding-top: 0;
-    }
-    
-    .shopText{
-        color: #fffefd;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .shopTitle{
-        font-size: 5rem;
-        font-weight: 900;
-    } 
-    
-    .shopSub{
-        font-size: 2rem;
-        font-weight: 300;
-        font-style: italic;
-        padding-top: 45rem;
-    }
-}
+    padding-top: 45rem; } }
